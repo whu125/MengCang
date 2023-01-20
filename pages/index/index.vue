@@ -4,12 +4,21 @@
 		<!-- 似乎是太大了 在微信小程序里面显示不了 暂定做成app -->
 		<img src="../../static/bg.jpg" alt="" class="bg">
 
-		<div class="test"></div>
+		<div class="test" @click="navigate('novel')"></div>
 	</div>
 
 
 </template>
 <script setup lang="ts">
+	const navigate = (str) => {
+		if (str === 'novel')
+			uni.navigateTo({
+				url: "/pages/novel/NovelCheck",
+				success: res => {},
+				fail: () => {},
+				complete: () => {}
+			})
+	}
 </script>
 <style lang="scss" scoped>
 	.bgBox {

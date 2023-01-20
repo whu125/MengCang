@@ -5,6 +5,12 @@
 			"style": {
 				// "navigationBarTitleText": "uni-app"
 			}
+		},
+		{
+			"path": "pages/novel/NovelCheck",
+			"style": {
+				// "navigationBarTitleText": "uni-app"
+			}
 		}
 	],
 	"globalStyle": {
