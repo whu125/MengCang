@@ -4,6 +4,8 @@
 		<img src="../../static/guanbijiantou.png" class="guanbijiantou">
 		<img src="../../static/write_novel_background.png" class="bg">
 		<div class="write_novel_box">
+			
+			
 			<div class="title">
 				续   写   小   说
 			</div>
