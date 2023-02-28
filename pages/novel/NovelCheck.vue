@@ -1,31 +1,27 @@
 <template>
 	<div class="write_novel_page">
-		<img src="../../static/jiantou.png" class="fanhuijiantou">
-		<img src="../../static/guanbijiantou.png" class="guanbijiantou">
-		<img src="../../static/write_novel_background.png" class="bg">
-		<div class="write_novel_box">
-			
-			
-			<div class="title">
-				续   写   小   说
-			</div>
-			<div class="neikuang">
-				<div class="liucheng">
-					<div class="shangchuan_circle"></div>
-					<div class="shangchuan_text">上传</div>
-					<div class="lianxian1"></div>
-					<div class="shenhe_circle"></div>
-					<div class="shenhe_text">审核</div>
-					<div class="lianxian2"></div>
-					<div class="fabu_circle"></div>
-					<div class="fabu_text">发布</div>
-				</div>
-				<text class="title_of_novel">书名xxx</text>
-				<div class="shurukuang"></div>
-				<div class="submit">上 传 续 写</div>
-			</div>
-
+		<div class="top_background1"></div>
+		<div class="top_background2"></div>
+		<img src="../../static/top_jiantou.png" class="fanhuijiantou">
+		<img src="../../static/people.png" class="people">
+		<img src="../../static/write_novel_background_new.png" class="bg">
+		<div class="peopleswords"></div>
+		<div class="qipao1"></div>
+		<div class="qipao2"></div>
+		<div class="xuxiexiaoshuokuang"></div>
+		<div class="liucheng">
+			<div class="shangchuan_circle"></div>
+			<div class="shangchuan_text">上传</div>
+			<div class="lianxian1"></div>
+			<div class="shenhe_circle"></div>
+			<div class="shenhe_text">审核</div>
+			<div class="lianxian2"></div>
+			<div class="fabu_circle"></div>
+			<div class="fabu_text">发布</div>
 		</div>
+		<text class="title_of_novel">书名xxx</text>
+		<div class="shurukuang"></div>
+		<div class="submit">上 传 续 写</div>
 	</div>
 </template>
 
@@ -39,6 +35,80 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.top_background1{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 120px;
+	height: 25px;
+	border-radius: 10rpx;
+	background: rgba(119, 41, 255, 1);
+	z-index: 1;
+	border-width: 0px 5px 5px 0px;
+	border-style: solid;
+	border-color: rgba(255, 92, 255, 1);
+}
+
+.top_background2{
+	position: absolute;
+	z-index: 1;
+	left: 120px;
+	top: 0px;
+	width: 375px;
+	height: 15px;
+	opacity: 1;
+	background: rgba(119, 41, 255, 1);
+	border: 5px solid rgba(255, 92, 255, 1);  
+	border-width: 0rpx 0rpx 10rpx 0rpx; 
+}
+
+.people{
+	left: 2px;
+	top: 20px;
+	width: 37%;
+	height: 24%;
+	opacity: 0.9;
+	z-index: 2;
+	position: absolute;
+}
+
+.peopleswords{
+	position: absolute;
+	left: 45%;
+	top: 4%;
+	width: 45%;
+	height: 15%;
+	opacity: 1;
+	border-radius: 50px;
+	background: rgba(121, 72, 234, 0.5);
+	border: 3px solid rgba(251, 44, 255, 1);            
+}
+
+.qipao1{
+	position: absolute;
+	z-index: 3;
+	left: 38%;
+	top: 20%;
+	width: 2%;
+	height: 1%;
+	opacity: 1;
+	border-radius: 50px;
+	background: rgba(121, 72, 234, 0.4);
+	border: 2px solid rgba(251, 44, 255, 1);        
+}
+
+.qipao2{
+	position: absolute;
+	left: 43%;
+	top: 18%;
+	width: 2%;
+	height: 1%;
+	opacity: 1;
+	border-radius: 50px;
+	background: rgba(121, 72, 234, 0.4);
+	border: 2px solid rgba(251, 44, 255, 1);        
 }
 
 .title{
@@ -58,32 +128,55 @@
 
 .fanhuijiantou{
 	position: absolute;
-	height: 50rpx;
-	top: 185rpx;
-	left: 550rpx;
-}
-
-.guanbijiantou{
-	position: absolute;
-	height: 50rpx;
-	top: 185rpx;
-	left: 640rpx;
-}
-
-.write_novel_box{
-	position: absolute;
-	top:235rpx;
-	height: 1210rpx;
-	width: 720rpx;
 	z-index: 1;
-	opacity: 0.75;
-	border-radius: 20rpx;
-	background-image: url("../../static/续写小说文本框背景.jpg");
-	border: 5rpx solid saddlebrown;
+	height: 45rpx;
+	width: 100rpx;
+	top: 3rpx;
+	left: 80rpx;
+	-webkit-transform: rotate(180deg);
+}
+
+.xuxiexiaoshuokuang{
+	position: absolute;
+	top: 400rpx;
+	height: 1155rpx;
+	width: 700rpx;
+	z-index: 1;
+	background-image: url("../../static/input_background_brown_yellow.png");
+	background-size: 100% 100%;
+	
+}
+
+.liucheng{
+	position: absolute;
+	z-index: 1;
+	height: 200rpx;
+	width: 660rpx;
+	top: 550rpx;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	}
+}
+
+.title_of_novel{
+	position: absolute;
+	z-index: 1;
+	top: 690rpx;
+	left: 70rpx;
+	font-size: 44rpx;
+}
+
+.shurukuang{
+	border: 7rpx solid black;
+	position: absolute;
+	top: 770rpx;
+	height: 500rpx;
+	width: 580rpx;
+	border-radius: 50rpx;
+	background-color: navajowhite;
+	z-index: 3;
+}
+
 .neikuang{
 	position: absolute;
 	top: 80rpx;
@@ -92,20 +185,12 @@
 	z-index: 1;
 	// opacity: 0.55;
 	border-radius: 10rpx;
-	background: rgba(202, 182, 153, 1);
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.liucheng{
-	position: absolute;
-	height: 200rpx;
-	width: 660rpx;
-	top: 90rpx;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 .shangchuan_circle{
 	position: absolute;
 	top: 40rpx;
@@ -161,28 +246,14 @@
 	right: 90rpx;
 	background:black;
 }
-.title_of_novel{
-	position: absolute;
-	top: 290rpx;
-	left: 50rpx;
-	font-size: 44rpx;
-}
-.shurukuang{
-	border: 7rpx solid black;
-	position: absolute;
-	top: 350rpx;
-	height: 600rpx;
-	width: 666rpx;
-	border-radius: 50rpx;
-	z-index: 3;
-}
+
 .submit{
 	z-index: 3;
 	position: absolute;
 	background: saddlebrown;
 	opacity: 1;
-	top: 1000rpx;
-	width: 660rpx;
+	top: 1320rpx;
+	width: 600rpx;
 	display: flex;
 	align-items: center;
 	justify-content: center;
